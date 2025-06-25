@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048ゲーム</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="description" style="max-width:420px;margin:32px auto 0 auto;padding:16px 20px 8px 20px;background:#fffbe7;border-radius:8px;color:#776e65;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-size:1.1em;">
+    <b>2048ゲーム</b>は、同じ数字のタイルを合体させて2048を目指すパズルゲームです。<br>
+    <ul style="margin:8px 0 0 20px;padding:0;">
+      <li>矢印キー（↑↓←→）でタイルを動かします</li>
+      <li>同じ数字がぶつかると合体します</li>
+      <li>リスタートボタンで最初からやり直せます</li>
+    </ul>
+  </div>
+  <h1>2048</h1>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="score">スコア: <span id="score-value">0</span></div>
+    <button id="restart">リスタート</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
