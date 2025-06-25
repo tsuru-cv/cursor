@@ -1,0 +1,14 @@
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#gameCanvas {
+  background: #fff;
+  border: 2px solid #333;
+  display: block;
+} 
