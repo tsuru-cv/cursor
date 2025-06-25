@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Élégance - おしゃれなカフェ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><i class="fas fa-coffee"></i> Café Élégance</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">私たちについて</a></li>
+                    <li><a href="#menu">メニュー</a></li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Café Élégance</h1>
+                    <p class="hero-subtitle">上質なコーヒーと心温まる時間をお届けします</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button primary">メニューを見る</button>
+                        <button class="cta-button secondary">予約する</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="coffee-cup">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">私たちについて</h2>
+                    <p class="section-subtitle">2010年の創業以来、お客様に最高のカフェ体験をお届けしています</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>渋谷の静かな一角にあるCafé Éléganceは、上質なコーヒー豆と丁寧な焙煎技術で、一杯一杯心を込めて淹れるコーヒーを提供しています。</p>
+                        <p>私たちは、単なるコーヒーショップではなく、お客様が心からリラックスできる特別な空間を目指しています。季節の食材を使用した手作りスイーツと共に、至福のひとときをお過ごしください。</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>オーガニック豆</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>手作りスイーツ</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-music"></i>
+                                <span>心地よい音楽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>13年</h3>
+                            <p>営業年数</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>コーヒー豆の種類</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>満足したお客様</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">メニュー</h2>
+                    <p class="section-subtitle">厳選された食材で作る、心と体に優しいメニュー</p>
+                </div>
+                <div class="menu-tabs">
+                    <button class="tab-button active" data-tab="coffee">コーヒー</button>
+                    <button class="tab-button" data-tab="tea">ティー</button>
+                    <button class="tab-button" data-tab="dessert">スイーツ</button>
+                    <button class="tab-button" data-tab="food">フード</button>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-grid active" id="coffee">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>エスプレッソ</h3>
+                                <p>深い味わいと豊かな香りが特徴の本格エスプレッソ</p>
+                                <span class="price">¥450</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>カフェラテ</h3>
+                                <p>滑らかなミルクフォームとコーヒーの絶妙なバランス</p>
+                                <span class="price">¥580</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>カプチーノ</h3>
+                                <p>ふわふわのミルクフォームが特徴のイタリアンカプチーノ</p>
+                                <span class="price">¥550</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>コールドブリュー</h3>
+                                <p>24時間かけて抽出したまろやかで甘みのあるコールドブリュー</p>
+                                <span class="price">¥680</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-grid" id="tea">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>アールグレイ</h3>
+                                <p>ベルガモットの香りが特徴的な上品な紅茶</p>
+                                <span class="price">¥480</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>チャイラテ</h3>
+                                <p>スパイシーなチャイとミルクの絶妙な組み合わせ</p>
+                                <span class="price">¥580</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-grid" id="dessert">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>ティラミス</h3>
+                                <p>コーヒーとマスカルポーネの絶妙なハーモニー</p>
+                                <span class="price">¥680</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>チーズケーキ</h3>
+                                <p>しっとりとした食感のニューヨークスタイル</p>
+                                <span class="price">¥580</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-grid" id="food">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>アボカドトースト</h3>
+                                <p>新鮮なアボカドとポーチドエッグのヘルシーな一皿</p>
+                                <span class="price">¥780</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>サンドイッチ</h3>
+                                <p>季節の野菜とチキンのバランスの良いサンドイッチ</p>
+                                <span class="price">¥680</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ギャラリー</h2>
+                    <p class="section-subtitle">Café Éléganceの素敵な空間をご覧ください</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-coffee"></i>
+                            <span>コーヒー</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>スイーツ</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-couch"></i>
+                            <span>インテリア</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-leaf"></i>
+                            <span>グリーン</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>ドリンク</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fas fa-utensils"></i>
+                            <span>フード</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">お問い合わせ</h2>
+                    <p class="section-subtitle">ご予約やお問い合わせはお気軽にどうぞ</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>営業時間</h3>
+                        <div class="hours">
+                            <div class="hour-item">
+                                <span class="day">月〜金</span>
+                                <span class="time">8:00 - 22:00</span>
+                            </div>
+                            <div class="hour-item">
+                                <span class="day">土・日・祝</span>
+                                <span class="time">9:00 - 23:00</span>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <span>東京都渋谷区神南1-2-3</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                                <span>03-1234-5678</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                                <span>info@cafe-elegance.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="reservation">ご予約</option>
+                                <option value="inquiry">お問い合わせ</option>
+                                <option value="feedback">ご意見・ご感想</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-coffee"></i> Café Élégance</h3>
+                    <p>上質なコーヒーと心温まる時間をお届けします。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>メニュー</h4>
+                    <ul>
+                        <li><a href="#menu">コーヒー</a></li>
+                        <li><a href="#menu">ティー</a></li>
+                        <li><a href="#menu">スイーツ</a></li>
+                        <li><a href="#menu">フード</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>営業時間</h4>
+                    <ul>
+                        <li>月〜金: 8:00 - 22:00</li>
+                        <li>土・日・祝: 9:00 - 23:00</li>
+                        <li>年中無休</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>アクセス</h4>
+                    <ul>
+                        <li>渋谷駅徒歩5分</li>
+                        <li>神南1-2-3</li>
+                        <li>03-1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café Élégance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
